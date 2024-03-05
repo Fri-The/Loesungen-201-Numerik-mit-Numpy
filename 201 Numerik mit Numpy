@@ -10,3 +10,34 @@ c = np.eye(3)
 
 1d)
 d = np.linspace(-5, 5, 100)
+
+1e)
+x, y = np.meshgrid(d,d)
+
+1f)
+r = np.sqrt(x**2 + y**2)
+
+1g)
+E = x/r * np.sin(np.pi*r)
+%matplotlib inline
+import matplotlib.pyplot as plt
+plt.contour(x, y, E)
+
+2a)
+x = np.array([ 1, 1, 2, 3, 5, 8 ])
+dx = x[1:] - x[:-1]
+
+2b)
+x, y = np.meshgrid(np.arange(-5, 6), np.arange(-5, 6))
+r = np.sqrt(x**2 + y**2)
+binary_donut = (r > 2) & (r < 5) 
+print(binary_donut)
+
+2c)
+z = x + y
+print(z)
+n = z[binary_donut]
+print(n)
+
+3a)
+date, T = np.loadtxt("data/temperatures.txt", unpack = True)
