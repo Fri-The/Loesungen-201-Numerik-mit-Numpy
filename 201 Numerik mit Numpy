@@ -1,0 +1,12 @@
+Aufgabe:
+1a)
+a = np.logspace(-20,-10,11)
+
+1b)
+b = np.zeros((2,10))
+
+1c)
+c = np.eye(3)
+
+1d)
+d = np.linspace(-5, 5, 100)
